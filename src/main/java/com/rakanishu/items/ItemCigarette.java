@@ -16,7 +16,6 @@ import org.apache.logging.log4j.Logger;
 public class ItemCigarette extends Item implements IItemProvider{
     private static Logger logger = LogManager.getLogger(Item.class);
 
-
     public ItemCigarette(Properties p_i48487_1_) {
         super(p_i48487_1_);
     }
@@ -40,11 +39,6 @@ public class ItemCigarette extends Item implements IItemProvider{
                 world.playSound((PlayerEntity)null, livingEntity.getX(), livingEntity.getY(), livingEntity.getZ(), SoundEvents.PARROT_IMITATE_CREEPER, SoundCategory.PLAYERS, 0.5F, world.random.nextFloat() * 0.1F + 0.9F);
             }
         }
-    }
-
-    @Override
-    public ActionResultType useOn(ItemUseContext p_195939_1_) {
-        return super.useOn(p_195939_1_);
     }
 
     @Override
@@ -116,7 +110,9 @@ public class ItemCigarette extends Item implements IItemProvider{
         */
     }
 
+    /*
     public static double getHorizontalDistanceSqr(Vector3d p_213296_0_) {
         return p_213296_0_.x * p_213296_0_.x + p_213296_0_.z * p_213296_0_.z;
     }
+    */
 }

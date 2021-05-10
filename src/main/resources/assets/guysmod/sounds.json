@@ -1,0 +1,20 @@
+{
+  "daydreams.whisper.of.the.streets": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "guysmod:records/daydreams.whisper.of.the.streets",
+        "stream": true
+      }
+    ]
+  },
+  "entity.lexa.ambient": {
+    "category": "entity",
+    "sounds": [
+      {
+        "name": "guysmod:entity/lexa/hurt",
+        "stream": true
+      }
+    ]
+  }
+}

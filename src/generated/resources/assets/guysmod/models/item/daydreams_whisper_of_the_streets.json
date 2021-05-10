@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "guysmod:item/daydreams_whisper_of_the_streets"
+  }
+}

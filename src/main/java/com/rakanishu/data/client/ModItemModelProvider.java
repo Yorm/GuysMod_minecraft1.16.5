@@ -33,6 +33,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         builder(itemGenerated, ItemNames.JOINT_CIGARETTE);
         builder(itemGenerated, ItemNames.BOND_WIHT_BUTTON_CIGARETTE);
         builder(itemGenerated, ItemNames.GOLDEN_BEACH_CIGARETTE);
+
+        builder(itemGenerated, ItemNames.LEXA_SPAWN_EGG);
+
+        builder(itemGenerated, ItemNames.RECORD_DAYDREAMS);
     }
 
     private ItemModelBuilder builder(ModelFile itemGenerated, String name) {
