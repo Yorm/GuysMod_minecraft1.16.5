@@ -4,6 +4,7 @@ import com.rakanishu.configs.Config;
 import com.rakanishu.data.client.ModBlockStateProvider;
 import com.rakanishu.data.client.ModItemModelProvider;
 import net.minecraft.data.DataGenerator;
+import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.GatherDataEvent;
@@ -16,7 +17,12 @@ public final class DataGenerators {
     public static void gatherData(GatherDataEvent event){
         DataGenerator gen = event.getGenerator();
 
-        gen.addProvider(new ModBlockStateProvider(gen, event.getExistingFileHelper()));
-        gen.addProvider(new ModItemModelProvider(gen, event.getExistingFileHelper()));
+        ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
+
+        gen.addProvider(new ModBlockStateProvider(gen, existingFileHelper));
+        gen.addProvider(new ModItemModelProvider(gen, existingFileHelper));
+
+        ModBlockTagsProvider blockTagsProvider = new ModBlockTagsProvider(gen, existingFileHelper);
+        gen.addProvider((blockTagsProvider));
     }
 }

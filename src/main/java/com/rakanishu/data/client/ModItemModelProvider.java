@@ -23,7 +23,16 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         ModelFile itemGenerated = getExistingFile(mcLoc("item/generated"));
 
+        builder(itemGenerated, ItemNames.STUMP);
+
+        builder(itemGenerated, ItemNames.TOBACCO_SEEDS);
         builder(itemGenerated, ItemNames.CIGARETTE_SEEDS);
+        builder(itemGenerated, ItemNames.DON_SEEDS);
+
+        builder(itemGenerated, ItemNames.DONSKOY_TABAK_CIGARETTE);
+        builder(itemGenerated, ItemNames.JOINT_CIGARETTE);
+        builder(itemGenerated, ItemNames.BOND_WIHT_BUTTON_CIGARETTE);
+        builder(itemGenerated, ItemNames.GOLDEN_BEACH_CIGARETTE);
     }
 
     private ItemModelBuilder builder(ModelFile itemGenerated, String name) {

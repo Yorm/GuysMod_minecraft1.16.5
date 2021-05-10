@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "guysmod:item/bond_with_button_cigarette"
+  }
+}
