@@ -21,7 +21,7 @@ public class ModSpawnEggs {
     private static final Set<RegistryObject<ItemModSpawnEgg>> SPAWN_EGGS = new HashSet<>();
 
     public static final RegistryObject<ItemModSpawnEgg> LEXA_SPAWN_EGG = registerSpawnEgg(ItemNames.LEXA_SPAWN_EGG,
-            ModEntityTypes.ENTITY_LEXA, 15714446, 9794134
+            ModEntityTypes.ENTITY_LEXA, 3439278, 11895666
     );
 
     private static RegistryObject<ItemModSpawnEgg> registerSpawnEgg(

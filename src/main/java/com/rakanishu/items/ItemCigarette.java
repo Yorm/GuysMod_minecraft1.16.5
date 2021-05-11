@@ -30,7 +30,7 @@ public class ItemCigarette extends Item implements IItemProvider{
         super.releaseUsing(itemStack, world, livingEntity, i);
         ItemStack flintAndSteel = livingEntity.getItemInHand(Hand.OFF_HAND);
 
-        if(livingEntity instanceof PlayerEntity){
+        //if(livingEntity instanceof PlayerEntity){
             if(!flintAndSteel.isEmpty() && flintAndSteel.getItem() instanceof FlintAndSteelItem) {
                 flintAndSteel.hurtAndBreak(1, livingEntity, (consumer) -> {
                     consumer.broadcastBreakEvent(livingEntity.getUsedItemHand());
@@ -38,14 +38,14 @@ public class ItemCigarette extends Item implements IItemProvider{
                 spawnParticle(livingEntity.getX(), livingEntity.getY(), livingEntity.getZ(),  world,livingEntity.xRot,livingEntity.yRot);
                 world.playSound((PlayerEntity)null, livingEntity.getX(), livingEntity.getY(), livingEntity.getZ(), SoundEvents.PARROT_IMITATE_CREEPER, SoundCategory.PLAYERS, 0.5F, world.random.nextFloat() * 0.1F + 0.9F);
             }
-        }
+        //}
     }
 
     @Override
     public ItemStack finishUsingItem(ItemStack itemStack, World world, LivingEntity livingEntity) {
         ItemStack flintAndSteel = livingEntity.getItemInHand(Hand.OFF_HAND);
 
-        if(livingEntity instanceof PlayerEntity){
+        //if(livingEntity instanceof PlayerEntity){
             if(!flintAndSteel.isEmpty() && flintAndSteel.getItem() instanceof FlintAndSteelItem) {
                 spawnParticle(livingEntity.getX(), livingEntity.getY(), livingEntity.getZ(),  world,livingEntity.xRot,livingEntity.yRot);
                 flintAndSteel.hurtAndBreak(1, livingEntity, (consumer) -> {
@@ -62,7 +62,7 @@ public class ItemCigarette extends Item implements IItemProvider{
                     playerentity.drop(stump, false);
                 }
             }
-        }
+        //}
         return itemStack;
     }
 
