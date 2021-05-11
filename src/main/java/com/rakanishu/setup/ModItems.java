@@ -41,6 +41,16 @@ public class ModItems {
     public static final RegistryObject<Item> DON_SEEDS = Registration.ITEMS.register(ItemNames.DON_SEEDS,
             () -> new Item(new Item.Properties().tab(ModTabs.SHIT_TAB))
     );
+    //crops
+    public static final RegistryObject<Item> TOBACCO_BUNDLE = Registration.ITEMS.register(ItemNames.TOBACCO_BUNDLE,
+            () -> new Item(new Item.Properties().tab(ModTabs.SHIT_TAB))
+    );
+    public static final RegistryObject<Item> CIGARETTE_BUNDLE = Registration.ITEMS.register(ItemNames.CIGARETTE_BUNDLE,
+            () -> new Item(new Item.Properties().tab(ModTabs.SHIT_TAB))
+    );
+    public static final RegistryObject<Item> DON_BUNDLE = Registration.ITEMS.register(ItemNames.DON_BUNDLE,
+            () -> new Item(new Item.Properties().tab(ModTabs.SHIT_TAB))
+    );
     //cigarettes
     public static final RegistryObject<Item> DONSKOY_TABAK_CIGARETTE = Registration.ITEMS.register(ItemNames.DONSKOY_TABAK_CIGARETTE,
             () -> new ItemCigarette(new Item.Properties().food(FOOD_DONSKOY_TABAK_CIGARETTE).stacksTo(20).tab(ModTabs.SHIT_TAB))

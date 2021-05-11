@@ -1,6 +1,6 @@
 package com.rakanishu.setup;
 
-import com.rakanishu.blocks.BlockLexa;
+import com.rakanishu.blocks.BlockTobaccoCrop;
 import com.rakanishu.configs.BlockNames;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -17,7 +17,7 @@ import java.util.function.Supplier;
 public class ModBlocks {
 
     public static final RegistryObject<Block> LEXA_BLOCK = register(ModTabs.GUYS_TAB, BlockNames.LEXA_BLOCK, () ->
-            new BlockLexa(AbstractBlock.Properties.of(Material.STONE)
+            new Block(AbstractBlock.Properties.of(Material.STONE)
                     .jumpFactor(5)
                     .strength(3, 10)
                     .harvestLevel(2)
@@ -40,6 +40,13 @@ public class ModBlocks {
                     .harvestTool(ToolType.PICKAXE)
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.STONE)));
+    public static final RegistryObject<Block> TOBACCO_CROP = register(ModTabs.GUYS_TAB, BlockNames.TOBACCO_CROP, () ->
+            new BlockTobaccoCrop(AbstractBlock.Properties.of(Material.PLANT)
+                    .lightLevel((lightLevel) -> 15)
+                    .noCollission()
+                    .randomTicks()
+                    .instabreak()
+                    .sound(SoundType.CROP)));
 
     private static <T extends Block>RegistryObject registerNoItem(String name, Supplier<T> block){
         return Registration.BLOCKS.register(name, block);

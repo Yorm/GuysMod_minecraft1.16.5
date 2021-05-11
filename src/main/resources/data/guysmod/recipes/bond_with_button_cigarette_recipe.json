@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "guysmod:golden_beach_cigarette",
+      "data": 0
+    },
+    {
+      "item": "minecraft:dye",
+      "data": 5
+    },
+    {
+      "item": "minecraft:wooden_pressure_plate"
+    }
+  ],
+  "result": {
+    "item": "guysmod:bond_with_button_cigarette",
+    "count": 1
+  }
+}

@@ -13,8 +13,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        simpleBlock(ModBlocks.ARTIOM_BLOCK.get());
-        simpleBlock(ModBlocks.LEXA_BLOCK.get());
-        simpleBlock(ModBlocks.OSINA_BLOCK.get());
+        this.simpleBlock(ModBlocks.ARTIOM_BLOCK.get());
+        this.simpleBlock(ModBlocks.LEXA_BLOCK.get());
+        this.simpleBlock(ModBlocks.OSINA_BLOCK.get());
     }
 }

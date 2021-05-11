@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ILI",
+    "LLL",
+    "LLL"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_block"
+    },
+    "L": {
+      "item": "guysmod:lexa_ignot"
+    }
+  },
+  "result": {
+    "item": "guysmod:lexa_block",
+    "count": 1
+  }
+}

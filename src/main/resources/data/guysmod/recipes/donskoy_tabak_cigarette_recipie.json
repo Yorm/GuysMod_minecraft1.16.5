@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "guysmod:tobacco_bundle"
+    }
+  ],
+  "result": {
+    "item": "guysmod:donskoy_tabak_cigarette",
+    "count": 1
+  }
+}
