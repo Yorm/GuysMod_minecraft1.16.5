@@ -27,3 +27,4 @@ And some sounds for entities
 - [ ] Growing tobacco
 - [ ] Recepies
 - [ ] Guys
+- [ ] smoke direction
