@@ -6,6 +6,7 @@ public class ItemNames {
     public static final String TOBACCO_SEEDS = "tobacco_seeds";
     public static final String CIGARETTE_SEEDS = "cigarette_seeds";
     public static final String DON_SEEDS = "don_seeds";
+    public static final String WEED_BUMP = "weed_bump";
 
     public static final String TOBACCO_BUNDLE = "tobacco_bundle";
     public static final String CIGARETTE_BUNDLE = "cigarette_bundle";

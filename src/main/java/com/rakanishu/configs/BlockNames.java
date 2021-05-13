@@ -5,4 +5,5 @@ public class BlockNames {
     public static final String ARTIOM_BLOCK = "artiom_block";
     public static final String OSINA_BLOCK = "osina_block";
     public static final String TOBACCO_CROP = "tobacco_crop";
+    public static final String WEED_BUSH = "weed_bush";
 }

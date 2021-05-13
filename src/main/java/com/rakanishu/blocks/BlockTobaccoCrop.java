@@ -4,6 +4,7 @@ import com.rakanishu.setup.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.CropsBlock;
+import net.minecraft.item.Item;
 import net.minecraft.util.IItemProvider;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
@@ -33,4 +34,8 @@ public class BlockTobaccoCrop extends CropsBlock {
         return ModItems.TOBACCO_SEEDS.get();
     }
 
+    @Override
+    public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
+        return SHAPE_BY_AGE[state.getValue(this.getAgeProperty())];
+    }
 }

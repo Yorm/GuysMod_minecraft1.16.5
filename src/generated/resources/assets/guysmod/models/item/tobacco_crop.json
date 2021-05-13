@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/crop",
   "textures": {
-    "crop": "guysmod:block/tobacco_crop"
+    "crop": "guysmod:block/crop/tobacco_crop"
   }
 }

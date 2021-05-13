@@ -1,16 +1,17 @@
 package com.rakanishu.setup;
 
 import com.rakanishu.blocks.BlockTobaccoCrop;
+import com.rakanishu.blocks.BlockWeedBush;
 import com.rakanishu.configs.BlockNames;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.SoundType;
+import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.world.gen.feature.BlockClusterFeatureConfig;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.fml.RegistryObject;
+import net.minecraftforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
 
@@ -47,6 +48,14 @@ public class ModBlocks {
                     .randomTicks()
                     .instabreak()
                     .sound(SoundType.CROP)));
+
+    public static final RegistryObject<Block> WEED_BUSH = register(ModTabs.GUYS_TAB, BlockNames.WEED_BUSH, () ->
+            new BlockWeedBush(AbstractBlock.Properties.of(Material.PLANT)
+                    .lightLevel((lightLevel) -> 15)
+                    .noCollission()
+                    .randomTicks()
+                    .instabreak()
+                    .sound(SoundType.SWEET_BERRY_BUSH)));
 
     private static <T extends Block>RegistryObject registerNoItem(String name, Supplier<T> block){
         return Registration.BLOCKS.register(name, block);

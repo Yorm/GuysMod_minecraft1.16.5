@@ -32,11 +32,14 @@ public class ModItems {
             () -> new ItemStump(new Item.Properties().stacksTo(1).tab(ModTabs.SHIT_TAB))
     );
     //seeds
-    public static final RegistryObject<Item> TOBACCO_SEEDS = Registration.ITEMS.register(ItemNames.TOBACCO_SEEDS,
-            () -> new Item(new Item.Properties().tab(ModTabs.SHIT_TAB))
+    public static final RegistryObject<BlockItem> TOBACCO_SEEDS = Registration.ITEMS.register(ItemNames.TOBACCO_SEEDS,
+            () -> new BlockItem(ModBlocks.TOBACCO_CROP.get(), new Item.Properties().tab(ModTabs.SHIT_TAB))
     );
     public static final RegistryObject<Item> CIGARETTE_SEEDS = Registration.ITEMS.register(ItemNames.CIGARETTE_SEEDS,
             () -> new Item(new Item.Properties().tab(ModTabs.SHIT_TAB))
+    );
+    public static final RegistryObject<Item> WEED_BUMP = Registration.ITEMS.register(ItemNames.WEED_BUMP,
+            () -> new BlockItem(ModBlocks.WEED_BUSH.get(), new Item.Properties().tab(ModTabs.SHIT_TAB))
     );
     public static final RegistryObject<Item> DON_SEEDS = Registration.ITEMS.register(ItemNames.DON_SEEDS,
             () -> new Item(new Item.Properties().tab(ModTabs.SHIT_TAB))
