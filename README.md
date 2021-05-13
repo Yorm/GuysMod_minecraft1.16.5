@@ -25,6 +25,6 @@ And some sounds for entities
 
 - [ ] Adding new sounds
 - [ ] Growing tobacco
-- [ ] Recepies
+- [x] Recepies
 - [ ] Guys
-- [ ] smoke direction
+- [x] Smoke direction
